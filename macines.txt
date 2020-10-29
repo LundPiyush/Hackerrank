@@ -1,0 +1,243 @@
+read
+samjh rha 
+haan
+code kese hoga voh nhi samjh rh amuje
+sochne de thoda 
+prblm samjh gya
+haan 
+problem is machine 2-3 hui chelagea 10machine dalenge sabke days kese niklenge
+haanproduction n  count easy h 
+days kese niklenge idr 2 n 3 hai sif toh samjha
+ruk do min sochne de
+agr samjh machine 
+hai
+
+
+
+
+sunn 
+haan
+agar mai key value pair banau <machine duration   no.of machines>
+eg de
+eg 
+4 10
+2 2 3 4 
+d:dictionary
+//<2  2> 
+<3  1>
+<4  1>
+iske aage kya
+abi aisa kuch karna hai every 2 days pe 2 se count bhadega
+every 3rd day 1 se
+every 4th day 1 se
+//correct 
+
+agar mai dayno ka divisibility se kuch karu toh ?
+like yaha pe samajh day 1 se start kiya 1 
+dee this is only 3 type pf machine
+imagine machine
+2 3 5 7 9 11 13
+all prime
+sunn
+
+for new key in dictionary  I create a list of 10nos with there muktiples
+3 mila list bna dunga[3,...30]
+saay
+agar 1 lakh products banane honge toh 30 days ke zaada samajh lag raha toh voh multiples kaise karega
+baisc 10 multiples nikalu fr test case fail hua toh 20 kar dunga
+memory complexity bahut fr how to get the days 
+sochne de
+
+I make only one list of keys in dictionary
+[2,3,4]
+idr i j k rakha meine
+
+
+
+i will see min(2*1,3*1,4*1) is 2
+mtlb 2 day hai
+second min(2*2,3*1,4*1) mtlb 3 day hai 
+third min(2*2,3*2,4*1) mtlb 4 day hai but here frst(2*2) and third(4*1) are equal so 2 ka value in dict is 2 and 4 ka is 1 so increment by 3 
+fourth day min(2*i,3*j,4*k)
+three loops complexity
+ 
+ek array bana jismai tu yeh i j k rakega 
+dee i j k 1 se start honge end tab hoge jab count mil gya han
+
+so they are the loops n^3 for three distinct machine
+you mean 10 machines toh n^10 yes
+wait
+
+Arry[] = [1,1,1,1,1]
+keys=[2,3,4]
+keys.sort()
+while(count < goal):
+	i,j,k=1
+	min(keys[1]*array[1], keys[2]*array[2],....)	
+
+
+
+
+
+
+
+
+oyee sun
+haaan
+eg:
+5 10
+2 2 3 3 4
+
+abhi 
+2nd day pe 2 2 wali machine degi
+ product abhi next yeh apna product 4th day pe degi right nhi samjha ruk
+
+sunn
+2nd day pe 2
+3rd day pe 2
+4th day pe 3
+
+sun
+machines : 2   2    3    3   4
+day 2      1   1    0    0    0
+day 3      0   0     1  
+
+
+
+
+
+
+sun agar mai ek dursa array bnau
+
+[2 2 3 3 4]   - orignal array
+every time a machine gives product uska value uske orignal value se increase
+
+day 2 [4 4 3 3 4]
+day 3 [4 4 6 6 4]
+day 4 [6 6 6 6 8]
+
+isse kya
+isse min nikalnge n jitne voh min ke entryies hai utne se count increse
+sunn
+
+
+
+
+
+
+tera approch samajh gaya hai mujhe
+tune array[2] ku likha fr
+
+i was saying ki agar mai machine 1 use kiya 2 days pe 
+toh abhi next time yeh machine mujhe 4th day pe product dega
+no
+
+
+
+sun wait ek sec
+
+
+
+
+
+
+
+sunn mera approach beakar hai but dekha rha tujje pura sudo code krke
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+araay sara 1 hai toh array[2] ku
+when i use the first machine 
+toh i will increment array[1]
+nhi samjha
+tune joh upar bataya ki 
+samjha sahi hai try kar yeh
+prblm is bol 
+tere min mai i ki jhaga yeh array ka value increase kiya agar 
+try karu 
+aly kya likhte hai yeh
+
+
+
+
+
+2 5
+2 3
+
+day prod count
+2    1     1
+3    1     2
+4    1     3
+6    2     5
+
+
+
+
+
+
+
+
+
+
+keys->2 2 3 3 4
+keys1->keys.sort().distint()
+keys->2 3 4
+d->
+2:2,3:2,4:1
+
+
+     2          2           3             3            4
+-----------------------------------------------------------
+d2  is(2/2)   is(2/2)     -              -         -           
+         1       1
+
+
+day3    -           -         1              1         -
+
+
+day4     -       -             -              -         1
+  
+
+day	
+(2*keys1)
+
+
+
+koi h??????????????????????????????????????????????????????????????????????????????///
+
+mai google kar rahi thi yeh aise nahi hoga 
+tere logic se days milega mujhe mre logic se count
+
+humare logic bahut time lenge
+yaha discussions mai binary search ke logic se kiya hai 
+mtlb
+samajhne ka rokkkkkkkkkkkkkkkkkkk
+
+min(2*2,3*2,4*2)
+
+
+
+
+
+
+
+
+
+
+
+

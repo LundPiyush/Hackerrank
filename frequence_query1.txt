@@ -1,0 +1,25 @@
+d={}
+n=int(input())
+for i in range(n):
+	action,ele=input().split(' ')
+	action=int(action)
+	ele=int(ele)
+	if action==1:
+		if ele in d:#checking the element present in dict or not
+			d[ele]=d[ele]+1#if present its cuurent count +1
+		else:
+			d[ele]=1# if not present add the element with count=1
+	elif action ==2:
+		if ele not in d:# if element is not in list take the next input
+			continue
+		if d[ele]==0:# if element count is zero keep as it is dont make -1
+			continue
+		else:
+			d[ele]=d[ele]-1# decrement the element count
+	else:
+		if ele in iter(d.values()):#checking the frequency in dict ka values
+			print("1")
+		else:
+			print("0")
+		
+#print(d)
