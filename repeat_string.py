@@ -16,3 +16,8 @@ def f1(st,n):
 st=input()
 n=int(input())
 f1(st,n)
+
+
+
+from datetime import datetime
+print(datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S %p"))
